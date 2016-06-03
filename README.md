@@ -10,9 +10,9 @@ O que são micro-serviços?
 
 Pre-requisitos / Desafios
 ---
-  - Edge Services: Micro Proxies and API Gateways
   - Configurações centralizadas
   - Service Discovery & Registration
+  - Edge Services: Micro Proxies and API Gateways
   - Routing/Load Balacing
   - Fault Tolerance (Circuit Breakers)
   - Monitoring
@@ -44,6 +44,17 @@ Tools:
   - HashiCorp Consul
  
 ![Cloud Bus Flow](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/cloud-bus-flow.png)  
+
+Service Discovery & Registration
+---
+Novas aplicações (e instâncias) podem iniciar ou parar e o local dela pode mudar, é importante desacoplar do *client* o endereço do serviço. Pense no *Service Discovery & Registration* como um catálogo onde os endereços das instâncias são encontrados à partir do nome lógico.
+  
+Tools:
+  - Netflix Eureka
+  - Apache Zookeeper
+  - HarshiCorp Consul
+
+![Service Discovery & Registration](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/service-discovery-flow.png)
 
 A sobrevivência não é obrigatória
 ---
