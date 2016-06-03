@@ -1,4 +1,5 @@
-[DEVCOMMERCE 2016](http://devcommerce2016.imasters.com.br) Microservices - Poderes, padrões e dificuldades
+[DEVCOMMERCE 2016](http://devcommerce2016.imasters.com.br)  
+Microservices - Poderes, padrões e dificuldades
 ---
 por [Marcos Barbero](http://linkedin.com/in/marcosbarbero)
 
@@ -87,6 +88,13 @@ Ferramentas
 ![Circuit Breaker](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/circuit-breaker-flow-01.png)
 ![Circuit Breaker](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/circuit-breaker-flow-02.png)
 
+Segurança & Single Sign-On
+---
+Segurança é difícil, e em sistemas distribuídos é crítico verificar a procedência e autenticidade de um request através de multiplos serviços. Nesse modelo arquitetural todas as requisições devem chegar através de um ponto único de entrada (API Gateway), centralizando em um único ponto as chances de ataque de um invasor. Existem muitas estratégias de segurança para APIs e tudo depende do modelo de negócio e estratégia de segurança que deverá ser adotada. OAuth2 é um padrão bem popular na segurança de APIs.
+
+Ferramentas
+  - Spring Security OAuth
+
 Complexidade Operacional
 ---
 Uma das vantagens de se trabalhar com micro-serviços são os deploys independentes e serviços mais simples, por outro lado, sistemas distribuídos trazem algumas dificuldades em níveis operacionais.
@@ -112,6 +120,9 @@ Ferramentas
   - Apache HTrace
   - Twitter Zipkin
 
+Cultura DevOps
+---
+
 A sobrevivência não é obrigatória
 ---
 >It is not necessary to change. Survival is not mandatory. -W. Edwards Deming
@@ -124,9 +135,10 @@ Links
     "definition": "http://martinfowler.com/microservices",
     "trade-offs": "http://martinfowler.com/articles/microservice-trade-offs.html",
     "prerequisites": "http://martinfowler.com/bliki/MicroservicePrerequisites.html",
-    "12factor": "http://12factor.net"
+    "12factor": "http://12factor.net",
+    "security": "http://presos.dsyer.com/decks/oauth-rest.html",
+    "inspiration": "https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"
   },
- "reference": "https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"
  "email": "marcos.hgb@gmail.com"
  "linkedin": "http://linkedin.com/in/marcosbarbero"
 } 
