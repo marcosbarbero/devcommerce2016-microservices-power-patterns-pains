@@ -14,7 +14,7 @@ Pre-requisitos / Desafios
   - Service Discovery & Registration
   - Edge Services: Micro Proxies e API Gateways
     - Roteamento e balanceamento
-  - Fault Tolerance (Circuit Breakers)
+  - Tolerância à falhas (Circuit Breakers)
   - Monitoração
   - Distributed Tracing
   - Security and Single Sign-On
@@ -73,6 +73,17 @@ Responsabilidades:
   - Etc
 
 ![API Gateway](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/api-gateway-pattern-01.png)
+
+Tolerância à falhas
+---
+Na arquitetura de micro-serviços é crítico que os serviços sejam escritos para serem tolerantes à falhas. Se alguma coisa acontecer o serviço deverá se degradar sem causar maiores impactos. Em sistemas distribuídos se o serviço não for desenhado para tolerar falhas isso poderá ocasionar um efeito dominó através de outros serviços.
+
+Ferramentas
+  - Play Framework
+  - Netflix Hystrix
+
+![Circuit Breaker](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/circuit-breaker-flow-01.png)
+![Circuit Breaker](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/circuit-breaker-flow-02.png)
 
 A sobrevivência não é obrigatória
 ---
