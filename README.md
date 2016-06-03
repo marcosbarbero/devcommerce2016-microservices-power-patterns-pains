@@ -12,10 +12,10 @@ Pre-requisitos / Desafios
 ---
   - Configurações centralizadas
   - Service Discovery & Registration
-  - Edge Services: Micro Proxies and API Gateways
-  - Routing/Load Balacing
+  - Edge Services: Micro Proxies e API Gateways
+    - Roteamento e balanceamento
   - Fault Tolerance (Circuit Breakers)
-  - Monitoring
+  - Monitoração
   - Distributed Tracing
   - Security and Single Sign-On
 
@@ -28,10 +28,6 @@ Welcome to the jungle Pattern
 ![Pattern 01](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/jungle-pattern-01.png)
   - Segundo cenário
 ![Pattern 02](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/jungle-pattern-02.png)
-
-API Gateway Pattern
----
-![API Gateway](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/api-gateway-pattern-01.png)
 
 Configurações
 ---
@@ -55,6 +51,16 @@ Tools:
   - HarshiCorp Consul
 
 ![Service Discovery & Registration](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/service-discovery-flow.png)
+
+Roteamento e Balanceamento (Client Side)
+---
+Um dos benefícios de usar um *Service Discovery* é o balanceamento do lado do client. Esse balanceamento permite a aplicação escolher uma instância mesmo que exista 10 ou 1000 instancias rodando.
+
+![Client side load balancing](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/client-side-load-balancing-flow.png)
+
+API Gateway Pattern
+---
+![API Gateway](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/api-gateway-pattern-01.png)
 
 A sobrevivência não é obrigatória
 ---
