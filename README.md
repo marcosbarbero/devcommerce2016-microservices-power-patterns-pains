@@ -122,10 +122,19 @@ Ferramentas
 
 Cultura DevOps
 ---
+A arquitetura de micro-serviços só é possível com uma cultura DevOps.  
+DevOps não é uma pessoa de *Operações* dedicada 100% do tempo em ajudar o time de desenvolvimento, é a cultura do desenvolvedor também pensar em operações no desenvolvimento da aplicação, porque quando a aplicação falhar quem deveria ser acionado é o desenvolvedor da aplicação, não a pessoa que criou uma VM no datacenter.
 
+Conclusão
+---
+Não reinvente a roda. Claro, como desenvolvedores nós queremos reescrever a roda à nossa maneira e claro, algumas vezes é necessário. Mas acredite em mim, você não vai querer reinventar tudo isso sozinho. Olhando todos esses *desafios* e dificuldades, tem muita coisa que precisa se levar em conta e na maioria das vezes escrever um framework não é parte do *core business* da empresa em que trabalhamos.
+Mesmo empresas grandes como Netflix e Alibaba usam Spring Cloud Framework, porque isso remove muita complexidade no tempo de desenvolvimento e permitem que os desenvolvedores foquem na essêcia do negócio da empresa.
+  
 A sobrevivência não é obrigatória
 ---
 >It is not necessary to change. Survival is not mandatory. -W. Edwards Deming
+  
+O ponto aqui é que você não é obrigado à mudar, mas a mudança é a chave para a sobrevivência.
 
 Links
 ---
