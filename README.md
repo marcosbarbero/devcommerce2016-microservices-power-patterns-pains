@@ -23,7 +23,7 @@ O que *NÃO* são micro-serviços?
 ---
 Quebrar uma aplicação em vários serviços menores não significa que você esteja em uma arquitetura de micro-serviços. Esse é apenas o primeiro passo.
 
-Welcome to the jungle Pattern
+Welcome to the Jungle Pattern
 ---
 ![Pattern 01](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/jungle-pattern-01.png)
   - Segundo cenário
@@ -33,7 +33,7 @@ Configurações
 ---
 Uma das boas praticas fornecidas pelo manifesto [12factor](http://12factor.net/) é a externalização de configurações do build, assim o mesmo build poderá ser promovido qualquer ambiente: Dev, QA, Prod.  
   
-Tools:
+Ferramentas:
   - Spring Cloud Config
   - Netflix Archaius
   - Apache Zookeeper
@@ -45,7 +45,7 @@ Service Discovery & Registration
 ---
 Novas aplicações (e instâncias) podem iniciar ou parar e o local dela pode mudar, é importante desacoplar do *client* o endereço do serviço. Pense no *Service Discovery & Registration* como um catálogo onde os endereços das instâncias são encontrados à partir do nome lógico.
   
-Tools:
+Ferramentas:
   - Netflix Eureka
   - Apache Zookeeper
   - HarshiCorp Consul
@@ -55,18 +55,28 @@ Tools:
 Roteamento e Balanceamento (Client Side)
 ---
 Um dos benefícios de usar um *Service Discovery* é o balanceamento do lado do client. Esse balanceamento permite a aplicação escolher uma instância mesmo que exista 10 ou 1000 instancias rodando.
+  
+Ferramentas
+  - Netflix Ribbon
+  - Netflix Feign
 
 ![Client side load balancing](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/client-side-load-balancing-flow.png)
 
 API Gateway Pattern
 ---
+Balanceamento do lado do client é usado somente entre comunicações entre serviços. Serviços que vivem na *borda* do datacenter, expostos para o tráfego público, são expostos por um DNS.
+
+Responsabilidades:
+  - Roteamento
+  - CORS
+  - Segurança
+  - Etc
+
 ![API Gateway](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/api-gateway-pattern-01.png)
 
 A sobrevivência não é obrigatória
 ---
 >It is not necessary to change. Survival is not mandatory. -W. Edwards Deming
-
-
 
 Links
 ---
@@ -75,7 +85,7 @@ Links
  "microservices": {
     "definition": "http://martinfowler.com/microservices",
     "trade-offs": "http://martinfowler.com/articles/microservice-trade-offs.html",
-    "prerequisites": "http://martinfowler.com/bliki/MicroservicePrerequisites.html"
+    "prerequisites": "http://martinfowler.com/bliki/MicroservicePrerequisites.html",
     "12factor": "http://12factor.net"
   },
  "reference": "https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"
