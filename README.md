@@ -8,20 +8,20 @@ O que são micro-serviços?
 >
 >-- James Lewis and Martin Fowler
 
-O que *NÃO* são micro-serviços?
----
-Quebrar uma aplicação em vários serviços menores não significa que você esteja em uma arquitetura de micro-serviços. Esse é apenas o primeiro passo.
-
 Pre-requisitos / Desafios
 ---
-  - Configurações versionadas e distribuídas
+  - Edge Services: Micro Proxies and API Gateways
+  - Configurações centralizadas
   - Service Discovery & Registration
   - Routing/Load Balacing
   - Fault Tolerance (Circuit Breakers)
   - Monitoring
-  - Edge Services: Micro Proxies and API Gateways
   - Distributed Tracing
   - Security and Single Sign-On
+
+O que *NÃO* são micro-serviços?
+---
+Quebrar uma aplicação em vários serviços menores não significa que você esteja em uma arquitetura de micro-serviços. Esse é apenas o primeiro passo.
 
 Welcome to the jungle Pattern
 ---
@@ -32,6 +32,18 @@ Welcome to the jungle Pattern
 API Gateway Pattern
 ---
 ![API Gateway](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/api-gateway-pattern-01.png)
+
+Configurações
+---
+Uma das boas praticas fornecidas pelo manifesto [12factor](http://12factor.net/) é a externalização de configurações do build, assim o mesmo build poderá ser promovido qualquer ambiente: Dev, QA, Prod.  
+  
+Tools:
+  - Spring Cloud Config
+  - Netflix Archaius
+  - Apache Zookeeper
+  - HashiCorp Consul
+ 
+![Cloud Bus Flow](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/cloud-bus-flow.png)  
 
 A sobrevivência não é obrigatória
 ---
@@ -47,6 +59,7 @@ Links
     "definition": "http://martinfowler.com/microservices",
     "trade-offs": "http://martinfowler.com/articles/microservice-trade-offs.html",
     "prerequisites": "http://martinfowler.com/bliki/MicroservicePrerequisites.html"
+    "12factor": "http://12factor.net"
   },
  "reference": "https://dzone.com/articles/the-power-patterns-and-pains-of-microservices"
  "email": "marcos.hgb@gmail.com"
