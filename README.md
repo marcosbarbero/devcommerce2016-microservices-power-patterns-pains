@@ -12,10 +12,26 @@ O que *NÃO* são micro-serviços?
 ---
 Quebrar uma aplicação em vários serviços menores não significa que você esteja em uma arquitetura de micro-serviços. Esse é apenas o primeiro passo.
 
+Pre-requisitos / Desafios
+---
+  - Configurações versionadas e distribuídas
+  - Service Discovery & Registration
+  - Routing/Load Balacing
+  - Fault Tolerance (Circuit Breakers)
+  - Monitoring
+  - Edge Services: Micro Proxies and API Gateways
+  - Distributed Tracing
+  - Security and Single Sign-On
+
 Welcome to the jungle Pattern
 ---
 ![Pattern 01](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/jungle-pattern-01.png)
+  - Segundo cenário
 ![Pattern 02](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/jungle-pattern-02.png)
+
+API Gateway Pattern
+---
+![API Gateway](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/api-gateway-pattern-01.png)
 
 A sobrevivência não é obrigatória
 ---
