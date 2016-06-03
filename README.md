@@ -15,9 +15,11 @@ Pre-requisitos / Desafios
   - Edge Services: Micro Proxies e API Gateways
     - Roteamento e balanceamento
   - Tolerância à falhas (Circuit Breakers)
-  - Monitoração
-  - Distributed Tracing
   - Security and Single Sign-On
+  - Complexidade Operacional
+    - Monitoração
+    - Distributed Tracing
+  - Cultura DevOps
 
 O que *NÃO* são micro-serviços?
 ---
@@ -84,6 +86,31 @@ Ferramentas
 
 ![Circuit Breaker](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/circuit-breaker-flow-01.png)
 ![Circuit Breaker](https://github.com/marcosbarbero/devcommerce2016-microservices-power-patterns-pains/wiki/circuit-breaker-flow-02.png)
+
+Complexidade Operacional
+---
+Uma das vantagens de se trabalhar com micro-serviços são os deploys independentes e serviços mais simples, por outro lado, sistemas distribuídos trazem algumas dificuldades em níveis operacionais.
+
+Monitoração
+---
+Monitoração é uma parte importante para qualquer aplicação em qualquer modelo arquitetural, e se torna uma tarefa difícil se não forem tomados os devidos cuidados durante o desenvolvimento. Todo serviço deve nascer com pelo menos um monitoramento básico.
+
+Ferramentas
+  - Spring Boot Actuator
+  - Dropwizard
+  - ELK
+  - Graylog
+  - Statsd
+  - Graphite
+  
+Distributed Tracing
+---
+Outra tarefa difícil para micro-serviços é fazer a correlação dos requests através de multiplos serviços e entender onde alguma coisa possa estar falhando.
+
+Ferramentas
+  - Spring Cloud Sleuth
+  - Apache HTrace
+  - Twitter Zipkin
 
 A sobrevivência não é obrigatória
 ---
