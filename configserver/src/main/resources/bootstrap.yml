@@ -1,0 +1,10 @@
+server.port: 8888
+
+spring:
+  application:
+    name: configserver
+    index: ${HOST:${random.int}}
+  cloud.config:
+    server:
+      git.uri: git@github.com:marcosbarbero/devcommerce-2016-config-repo.git
+      bootstrap: true

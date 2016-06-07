@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: catalogclient
+    index: ${HOST:${random.int}}

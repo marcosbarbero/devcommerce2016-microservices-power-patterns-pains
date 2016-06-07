@@ -1,0 +1,7 @@
+server.port: 9000
+
+spring:
+  application:
+    name: catalog
+    index: ${HOST:${random.int}}
+  cloud.config.uri: http://localhost:8888

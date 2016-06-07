@@ -1,0 +1,6 @@
+server.port: 8443
+
+spring:
+  application:
+    name: security
+    index: ${HOST:${random.int}}

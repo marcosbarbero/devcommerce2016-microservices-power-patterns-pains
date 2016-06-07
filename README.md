@@ -11,8 +11,8 @@ O que são micro-serviços?
 
 Pre-requisitos / Desafios
 ---
-  - Configurações centralizadas
   - Service Discovery & Registration
+  - Configurações centralizadas
   - Edge Services: Micro Proxies e API Gateways
     - Roteamento e balanceamento
   - Tolerância à falhas (Circuit Breakers)
